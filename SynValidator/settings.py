@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '192.168.0.169',
+    'coin-fz9a.onrender.com',
 ]
 
 
