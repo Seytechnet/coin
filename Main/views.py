@@ -15,6 +15,11 @@ def wallets(request):
     return render(request, 'wallets.html')
 
 def importkey(request):
+    if request.method == 'GET':
+        alert = request.GET.get('alert', '')
+        return render(request, 'import.html',{
+                    'alert' : alert
+                })
     return render(request, 'import.html')
 
 def reference(request):
