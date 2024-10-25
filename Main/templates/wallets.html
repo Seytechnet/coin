@@ -1,0 +1,1196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="description" content="../www.coinnsnodes.live/index.html"/>
+        <meta property="og:description" content="../www.coinnsnodes.live/index.html"/>
+        <meta property="og:url" content="../www.coinnsnodes.live/index.html"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="../www.coinnsnodes.live/ms-icon-310x310.PNG"/>
+        <meta property="og:image:alt" content="Coin Nodes"/>
+        <meta property="og:image:width" content="600"/>
+        <meta property="og:image:height" content="600"/>
+        <title>Connect Wallet</title>
+        <meta name="robots" content="index,follow"/>
+        <meta property="og:title" content="Connect Wallet | Coin Nodes"/>
+        <meta name="next-head-count" content="13"/>
+        <link rel="preconnect" href="../fonts.googleapis.com/index.html"/>
+        <link rel="preconnect" href="../fonts.gstatic.com/index.html" crossorigin="true"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.html"/>
+        <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.html"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.html"/>
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.html"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.html"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.html"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.html"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.html"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.html"/>
+        <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.html"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.html"/>
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.html"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.html"/>
+        <link rel="manifest" href="manifest.html"/>
+        <meta name="msapplication-TileColor" content="#ffffff"/>
+        <meta name="msapplication-TileImage" content="ms-icon-144x144.html"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <link rel="preconnect" href="../fonts.gstatic.com/index.html" crossorigin/>
+        <link rel="preload" href="{% static '_next/static/css/78ade6690479a575.css' %}" as="style"/>
+        <link rel="stylesheet" href="{% static '_next/static/css/78ade6690479a575.css' %}" data-n-g=""/>
+        <noscript data-n-css=""></noscript>
+        <style data-href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(../fonts.gstatic.com/s/baloo2/v16/wXK0E3kTposypRydzVT08TS3JnAmtdgazaps.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXK0E3kTposypRydzVT08TS3JnAmtdgozaps.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXK0E3kTposypRydzVT08TS3JnAmtdjEyqps.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXK0E3kTposypRydzVT08TS3JnAmtdj9yqps.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXK0E3kTposypRydzVT08TS3JnAmtdiayqps.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJM.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5V1g.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51ncAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51fcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51ncAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51fcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51ncAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51fcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51ncAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51fcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51ncAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51fcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Baloo 2';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/baloo2/v16/wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+            }
+        </style>
+    </head>
+    <body class="min-h-screen w-full bg-primary-bg !font-bah text-gray-200 scrollbar-thin scrollbar-track-primary scrollbar-thumb-primary-blue">
+        <div id="__next">
+            <main class="bg-l1 w-full py-8">
+                <div class="container flex flex-col space-y-5 p-5 xl:p-0">
+                    <h1 class="text-3xl text-center font-bold text-primary-blue">Connect Wallet</h1>
+                    <p class="text-center text-sm md:text-base lg:text-lg">Open protocol for connecting Wallets to Dapps</p>
+                    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 md:gap-5">
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="BRD wallet image" src="{% static 'walletsrc/brd.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">BRD wallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Coinbase image" src="{% static 'walletsrc/Coinbaselogo_Supplied_250x250-2.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Coinbase</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Saitamask wallet image" src="{% static 'walletsrc/saitama.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Saitamask wallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Terra station image" src="{% static 'walletsrc/terra.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Terra station</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Phantom wallet image" src="{% static 'walletsrc/phantom.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Phantom wallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Cosmos station image" src="{% static 'walletsrc/cosmos.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Cosmos station</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Exodus wallet image" src="{% static 'walletsrc/exodus.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Exodus wallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Wallet Connect image" src="{% static 'walletsrc/e726391f66eb7da7a0ed7d780b4df5e8e2416a17.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Wallet Connect</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Rainbow image" src="{% static 'walletsrc/1ae92b26df02f0abca6304df07debccd18262fdf5fe82daa81593582dac9a369.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Rainbow</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Trust image" src="{% static 'walletsrc/4622a2b2d6af1c9844944291e5e7351a6aa24cd7b23099efac1b2fd875da31a0.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Trust</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Argent image" src="{% static 'walletsrc/cf21952a9bc8108bf13b12c92443751e2cc388d27008be4201b92bbc6d83dd46.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Argent</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Metamask image" src="{% static 'walletsrc/c57ca95b47569778a828d19178114f4db188b89b763c899ba0be274e97267d96.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Metamask</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Binance Chain image" src="{% static 'walletsrc/54043975-b6cdb800-4182-11e9-83bd-0cd2eb757c6e.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Binance Chain</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Safemoon image" src="{% static 'walletsrc/Safemoon.webp' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Safemoon</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Gnosis Safe image" src="{% static 'walletsrc/Gnosis.webp' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Gnosis Safe</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="DeFi image" src="{% static 'walletsrc/f2436c67184f158d1beda5df53298ee84abfc367581e4505134b5bcf5f46697d.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">DeFi</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Pillar image" src="{% static 'walletsrc/0b58bf037bf943e934706796fb017d59eace1dadcbc1d9fe24d9b46629e5985c.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Pillar</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="imToken image" src="{% static 'walletsrc/9d373b43ad4d2cf190fb1a774ec964a1addf406d6fd24af94ab7596e58c291b2.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">imToken</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="ONTO image" src="{% static 'walletsrc/dceb063851b1833cbb209e3717a0a0b06bf3fb500fe9db8cd3a553e4b1d02137.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">ONTO</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Hipp oWallet image" src="{% static 'walletsrc/512x512bb.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Hipp oWallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Aave image" src="{% static 'walletsrc/aave-aave-logo.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Aave</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Digitex image" src="{% static 'walletsrc/2772.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Digitex</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Ledger image" src="{% static 'walletsrc/ledger_logo.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Ledger</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Portis image" src="{% static 'walletsrc/portis_logo_dribbble.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Portis</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Formatic image" src="{% static 'walletsrc/rtDOqMXY_400x400.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Formatic</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="MathWallet image" src="{% static 'walletsrc/7674bb4e353bf52886768a3ddc2a4562ce2f4191c80831291218ebd90f5f5e26.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">MathWallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="BitPay image" src="{% static 'walletsrc/ccb714920401f7d008dbe11281ae70e3a4bfb621763b187b9e4a3ce1ab8faa3b.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">BitPay</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Ledger Live image" src="{% static 'walletsrc/LedgerLive.webp' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Ledger Live</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="WallETH image" src="{% static 'walletsrc/83f26999937cbc2e2014655796da4b05f77c1de9413a0ee6d0c6178ebcfc3168.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">WallETH</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Authereum image" src="{% static 'walletsrc/71dad538ba02a9b321041d388f9c1efe14e0d1915a2ea80a90405d2f6b67a33d.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Authereum</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Atomex image" src="{% static 'walletsrc/unnamed.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Atomex</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="1inch Wallet image" src="{% static 'walletsrc/1inchWallet.webp' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">1inch Wallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Huobi image" src="{% static 'walletsrc/Huobi.webp' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Huobi</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Ronin image" src="{% static 'walletsrc/ronin.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Ronin</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="MYKEY image" src="{% static 'walletsrc/61f6e716826ae8455ad16abc5ec31e4fd5d6d2675f0ce2dee3336335431f720e.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">MYKEY</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Loopring image" src="{% static 'walletsrc/Loopring.webp' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Loopring</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="TrustVault image" src="{% static 'walletsrc/6bb4596640ce9f8c02fbaa83e3685425455a0917d025608b4abc53bfe55887c6.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">TrustVault</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Atomic image" src="{% static 'walletsrc/185850e869e40f4e6c59b5b3f60b7e63a72e88b09e2a43a40b1fd0f237e49e9a.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Atomic</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Coin98 image" src="{% static 'walletsrc/b021913ba555948a1c81eb3d89b372be46f8354e926679de648e4fa2938bed3e.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Coin98</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Tron image" src="{% static 'walletsrc/tron-trx-logo.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Tron</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Alice image" src="{% static 'walletsrc/beea4e71c2ffbb48b59b21e33fb0049ef6522585aa9c8a33a97d3e1c81f16693.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Alice</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="AlphaWallet image" src="{% static 'walletsrc/138f51c8d00ac7b9ac9d8dc75344d096a7dfe370a568aa167eabc0a21830ed98.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">AlphaWallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="D&#x27;CENT image" src="{% static 'walletsrc/468b4ab3582757233017ec10735863489104515ab160c053074905a1eecb7e63.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">D &#x27;CENT</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="ZelCore image" src="{% static 'walletsrc/29f4a70ad5993f3f73ae8119f0e78ecbae51deec2a021a770225c644935c0f09.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">ZelCore</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Nash image" src="{% static 'walletsrc/Nash.webp' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Nash</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Coinmoni image" src="{% static 'walletsrc/1433894569.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Coinmoni</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="GridPlus image" src="{% static 'walletsrc/6ec1ffc9627c3b9f87676da3f7b5796828a6c016d3253e51e771e6f951cb5702.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">GridPlus</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="CYBAVO image" src="{% static 'walletsrc/a395dbfc92b5519cbd1cc6937a4e79830187daaeb2c6fcdf9b9cce4255f2dcd5.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">CYBAVO</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Tokenary image" src="{% static 'walletsrc/c889f5add667a8c69d147d613c7f18a4bd97c2e47c946cabfdd13ec1d596e4a0.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Tokenary</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Torus image" src="{% static 'walletsrc/3f1bc4a8fd72b3665459ec5c99ee51b424f6beeebe46b45f4a70cf08a84cbc50.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Torus</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Spatium image" src="{% static 'walletsrc/7b83869f03dc3848866e0299bc630aaf3213bea95cd6cecfbe149389cf457a09.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Spatium</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="SafePal image" src="{% static 'walletsrc/0b415a746fb9ee99cce155c2ceca0c6f6061b1dbca2d722b3ba16381d0562150.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">SafePal</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Infinito image" src="{% static 'walletsrc/d0387325e894a1c4244820260ad7c78bb20d79eeec2fd59ffe3529223f3f84c6.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Infinito</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="wallet.io image" src="{% static 'walletsrc/176b83d9268d77438e32aa44770fb37b40d6448740b6a05a97b175323356bd1b.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">wallet.io</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href={% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Ownbit image" src="{% static 'walletsrc/8fb830a15679a8537d84c3852e026a4bdb39d0ee3b387411a91e8f6abafdc1ad.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Ownbit</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="EasyPocket image" src="{% static 'walletsrc/244a0d93a45df0d0501a9cb9cdfb4e91aa750cfd4fc88f6e97a54d8455a76f5c.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">EasyPocket</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Bridge Wallet image" src="{% static 'walletsrc/881946407ff22a32ec0e42b2cd31ea5dab52242dc3648d777b511a0440d59efb.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Bridge Wallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Spark Point image" src="{% static 'walletsrc/3b0e861b3a57e98325b82ab687fe0a712c81366d521ceec49eebc35591f1b5d1.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Spark Point</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="ViaWallet image" src="{% static 'walletsrc/ca86f48760bf5f84dcd6b1daca0fd55e2aa073ecf46453ba8a1db0b2e8e85ac1.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">ViaWallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="BitKeep image" src="{% static 'walletsrc/bitkeep.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">BitKeep</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Vision image" src="{% static 'walletsrc/b642ab6de0fe5c7d1e4a2b2821c9c807a81d0f6fd42ee3a75e513ea16e91151c.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Vision</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="PEAKDEFI image" src="{% static 'walletsrc/38ee551a01e3c5af9d8a9715768861e4d642e2381a62245083f96672b5646c6b.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">PEAKDEFI</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Unstoppable image" src="{% static 'walletsrc/7e90b95230bc462869bbb59f952273d89841e1c76bcc5319898e08c9f34bd4cd.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Unstoppable</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="HaloDeFi image" src="{% static 'walletsrc/025247d02e1972362982f04c96c78e7c02c4b68a9ac2107c26fe2ebb85c317c0.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">HaloDeFi</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Dok Wallet image" src="{% static 'walletsrc/d12b6e114af8c47a6eec19a576f1022032a5ee4f8cafee612049f4796c803c7e.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Dok Wallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="AT.Wallet image" src="{% static 'walletsrc/3d56ed42374504f1bb2ba368094269eaea461c075ab796d504f354baac213dc5.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">AT.Wallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Midas image" src="{% static 'walletsrc/1e04cf5cddcd84edb1370b12eae1fcecedf125b77209fff80e7ef2a6d3c74719.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Midas</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Ellipal image" src="{% static 'walletsrc/15d1d97de89526a3c259a235304a7c510c40cda3331f0f8433da860ecc528bef.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Ellipal</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="KEYRING PRO image" src="{% static 'walletsrc/LOGO-KEYRING-PRO.png' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">KEYRING PRO</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Aktionariat image" src="{% static 'walletsrc/19ad8334f0f034f4176a95722b5746b539b47b37ce17a5abde4755956d05d44c.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Aktionariat</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Talken image" src="{% static 'walletsrc/95501c1a07c8eb575cb28c753ab9044259546ebcefcd3645461086e49b671f5c.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Talken</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Flare image" src="{% static 'walletsrc/d612ddb7326d7d64428d035971b82247322a4ffcf126027560502eff4c02bd1c.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Flare</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="KyberSwap image" src="{% static 'walletsrc/KyberSwap.webp' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">KyberSwap</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="AToken image" src="{% static 'walletsrc/6193353e17504afc4bb982ee743ab970cd5cf842a35ecc9b7de61c150cf291e0.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">AToken</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="RWallet image" src="{% static 'walletsrc/b13fcc7e3500a4580c9a5341ed64c49c17d7f864497881048eb160c089be5346.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">RWallet</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Binana image" src="{% static 'walletsrc/2235b648bdf382bc1a6960f1db8eda5c71f65a1996e6cb549d24783ca58a2903.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Binana</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey' %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="PayTube image" src="{% static 'walletsrc/76428179ce9213ab6f8f49923310efcf5eea089764196c7a2018bea8afcd6603.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">PayTube</h4>
+                            </div>
+                        </a>
+                        <a class="walletBtn relative shadow-s1 bg-primary block px-5 py-2 rounded-[7px] border-l-primary-blue border-l-[5px] font-semibold group hover:!shadow-none !border-2 !border-transparent hover:!border-primary-blue2 transition-500 !rounded-xl" href="{% url 'importkey'  %}">
+                            <div class="flex flex-col space-y-2 items-center justify-center text-center">
+                                <div class="relative h-12 w-12 md:h-20 md:w-20 lg:h-24 lg:w-24 rounded-full overflow-hidden">
+                                    <img alt="Linen image" src="{% static 'walletsrc/dd8ee41915d967e547c80266e883d77ee808427405f4e8026a85ac1308104221.jpg' %}" decoding="async" data-nimg="fill" class="group-hover:scale-110 group-hover:animate-none duration-1000 animate-scale2" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+                                </div>
+                                <h4 class="text-sm md:text-base lg:text-lg group-hover:text-primary-blue duration-300">Linen</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8 text-center border-t pt-5 border-t-primary-blue">
+                    <p>
+                        SynValidator
+                        <!-- -->
+                        <a class="text-primary-blue2" href="{% url 'index'  %}">Click Here</a>
+                    </p>
+                    
+                </div>
+            </main>
+            <div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none"></div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            direc = document.querySelector('.walletBtn')
+            direc.addEventListener('click', function opendialog(url){
+                window.location.href = url;
+            });
+        </script>
+    </body>
+</html>
