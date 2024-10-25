@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '192.168.0.169',
     'coin-fz9a.onrender.com',
-    'www.sync-protocol.com',
+    'www.chain-haven.com',
     
 ]
 
