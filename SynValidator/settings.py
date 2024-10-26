@@ -34,6 +34,7 @@ ALLOWED_HOSTS = [
     '192.168.0.169',
     'coin-fz9a.onrender.com',
     'www.chain-haven.com',
+    'coin-pzbf.onrender.com',
     
 ]
 
