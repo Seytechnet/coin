@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     'coin-fz9a.onrender.com',
     'www.chain-haven.com',
     'coin-pzbf.onrender.com',
+    'sync-protocol.com',
     
 ]
 
